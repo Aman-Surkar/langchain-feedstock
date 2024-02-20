@@ -18,18 +18,18 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{python}}
     - poetry-core >=1.0.0
-    - pip
+    - pip {{pip}}
   run:
-    - python >=3.8,<4.0
+    - python {{python}}
     - langchain-core >=0.1.22,<0.2
     - langchain-community >=0.0.18,<0.1
-    - pydantic >=1,<3
+    - pydantic {{pydantic}}
     - sqlalchemy >=1.4,<3
-    - requests >=2.0.0,<3.0.0
+    - requests {{requests}}
     - pyyaml >=5.3
-    - numpy >=1.0.0,<2.0.0
+    - numpy {{numpy}}
     - aiohttp >=3.8.3,<4.0.0
     - tenacity >=8.1.0,<9.0.0
     - jsonpatch >=1.33.0,<2.0.0
@@ -38,13 +38,13 @@ requirements:
     - langsmith >=0.0.83,<0.1
   run_constrained:
     - azure-core >=1.26.4,<2.0.0
-    - tqdm >=4.48.0
+    - tqdm {{tqdm}}
     - openapi-pydantic >=0.3.2,<0.4.0
     - faiss-cpu >=1.0.0,<2.0.0
     - manifest-ml >=0.0.1,<0.0.2
     - transformers >=4.0.0,<5.0.0
     - beautifulsoup4 >=4.0.0,<5.0.0
-    - pytorch >=1,<3
+    - pytorch-base {{pytorch}}
     - jinja2 >=3.0.0,<4.0.0
     - tiktoken >=0.3.2,<0.6.0
     - qdrant-client >=1.3.1,<2.0.0
@@ -75,7 +75,7 @@ requirements:
     - chardet >=5.1.0,<6.0.0
     - requests-toolbelt >=1.0.0,<2.0.0
     - openlm >=0.0.5,<0.0.6
-    - scikit-learn >=1.2.2,<2.0.0
+    - scikit-learn {{scikit_learn}}
     - azure-ai-formrecognizer >=3.2.1,<4.0.0
     - azure-ai-vision >=0.11.1,<0.11.2
     - azure-cognitiveservices-speech >=1.28.0,<2.0.0
